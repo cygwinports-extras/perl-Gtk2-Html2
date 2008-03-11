@@ -1,0 +1,88 @@
+perl-Gtk2-Html2
+------------------------------------------
+Perl bindings for libgtkhtml-2, a HTML display widget for GTK2.
+
+Runtime requirements:
+  cygwin-1.5.25-7
+  glib2-2.14.6-1
+  gtk2-x11-2.12.7-1
+  libgtkhtml2-2.11.0-1
+  perl-5.10.0-3
+  perl-Glib-1.164-1
+  perl-Gtk2-1.164-1
+
+Build requirements:
+(besides corresponding devel packages)
+  binutils-20060817-1
+  gcc-core-3.4.4-3
+  make-3.81-1
+  perl-ExtUtils-Depends-0.205-2
+  perl-ExtUtils-PkgConfig-1.10-1
+
+Canonical homepage:
+  http://gtk2-perl.sourceforge.net/
+
+Canonical download:
+  http://downloads.sourceforge.net/gtk2-perl/
+
+-------------------------------------------
+
+Build instructions:
+  unpack perl-Gtk2-Html2-0.04-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./perl-Gtk2-Html2-0.04-X.cygport all
+
+This will create:
+  /usr/src/perl-Gtk2-Html2-0.04-X-src.tar.bz2
+  /usr/src/perl-Gtk2-Html2-0.04-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Gtk2/Html2.pm
+  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Gtk2/Html2/Context.pod
+  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Gtk2/Html2/Document.pod
+  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Gtk2/Html2/Install/Files.pm
+  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Gtk2/Html2/Install/gtkhtml2perl-autogen.h
+  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Gtk2/Html2/Install/gtkhtml2perl.h
+  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Gtk2/Html2/Install/gtkhtml2perl.typemap
+  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Gtk2/Html2/Stream.pod
+  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Gtk2/Html2/View.pod
+  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Gtk2/Html2/index.pod
+  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/auto/Gtk2/Html2/.packlist
+  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/auto/Gtk2/Html2/Html2.dll
+  /usr/share/doc/perl-Gtk2-Html2-0.04/AUTHORS
+  /usr/share/doc/perl-Gtk2-Html2-0.04/ChangeLog
+  /usr/share/doc/perl-Gtk2-Html2-0.04/LICENSE
+  /usr/share/doc/perl-Gtk2-Html2-0.04/NEWS
+  /usr/share/doc/perl-Gtk2-Html2-0.04/README
+  /usr/share/doc/perl-Gtk2-Html2-0.04/TODO
+  /usr/share/man/man3/Gtk2.Html2.3pm.gz
+  /usr/share/man/man3/Gtk2.Html2.Context.3pm.gz
+  /usr/share/man/man3/Gtk2.Html2.Document.3pm.gz
+  /usr/share/man/man3/Gtk2.Html2.Stream.3pm.gz
+  /usr/share/man/man3/Gtk2.Html2.View.3pm.gz
+  /usr/share/man/man3/Gtk2.Html2.index.3pm.gz
+
+--------------------
+
+Port Notes:
+
+----- version 0.04-4 -----
+Rebuilt for perl-5.10.
+
+----- version 0.04-3 -----
+Rebuilt against perl-5.8.7 with --enable-auto-image-base.
+
+----- version 0.04-2 -----
+Rebuilt against perl-5.8.6 with a new build script.
+
+----- version 0.04-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
